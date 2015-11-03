@@ -1,7 +1,12 @@
 language: node_js
 node_js:
   - "stable"
-  
+
+branches:
+  only:
+    - gh-pages
+    - master
+
 before_script:
   - npm install -g gulp
 script: gulp
