@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var merge = require('merge2');
 var debug = require('gulp-debug');
 var browserify = require('gulp-browserify');
+var mocha = require('gulp-mocha');
 
 gulp.task('default', ['templates', 'styles', 'js']);
 
@@ -36,11 +37,18 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('js', function () {
+gulp.task('js', ['test'], function () {
     return gulp.src('src/js/metus.js')
         .pipe(browserify({}))
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest('./js'));
+});
+
+gulp.task('test', function () {
+    return gulp.src('test/*.js', {
+            read: false
+        })
+        .pipe(mocha());
 });
 
 gulp.task('watch', ['js', 'templates', 'styles'], function () {
