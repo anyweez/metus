@@ -1,0 +1,89 @@
+// The color of framing elements (headers, footers, non-main content)
+$framing-color: #202020;
+body {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 2% 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header {
+    background-color: $framing-color;
+    color: white;
+    padding: .5% .5% .5% 1%;
+}
+
+footer {
+    background-color: $framing-color;
+    color: white;
+    padding: .1%;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: .8em;
+    text-align: right;
+}
+
+footer p {
+    padding-right: 2%;
+}
+
+input[type="text"] {
+    width: 40%;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+}
+
+#content {
+    padding: 1%;
+}
+
+
+/**
+ * Awesomplete 
+ */
+
+div.awesomplete li {
+    color: black;
+}
+
+div.awesomplete {
+    width: 80%;
+}
+
+.ac-option {
+    color: black;
+    img {
+        display: inline-block;
+        margin-right: 1%;
+        padding: 1%;
+        width: 80px;
+        height: 80px;
+    }
+    .ac-option-body {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    h2 {
+        padding: .5% 0 0 0;
+        margin: 0% 0 1% 0;
+        font-size: 1.2em;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: .9em;
+        color: #666;
+    }
+}

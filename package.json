@@ -1,0 +1,26 @@
+{
+  "name": "metus",
+  "version": "1.0.0",
+  "description": "Meetup.com group growth visualization app.",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyweez/metus.git"
+  },
+  "author": "anyweez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyweez/metus/issues"
+  },
+  "homepage": "https://github.com/anyweez/metus#readme",
+  "dependencies": {
+    "awesomplete": "^1.0.0",
+    "browserify": "^12.0.1",
+    "chartist": "^0.9.4",
+    "chartist-plugin-axistitle": "0.0.1",
+    "moment": "^2.10.6"
+  }
+}
